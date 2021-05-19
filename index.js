@@ -1,17 +1,15 @@
 
 (function () {
 
-  console.log('index.js init 4');
+  console.log('index.js init 5');
 
-  document.atbHelper = {
-    generateEventClick: function() {
-      generateEventClick
-    }
-  }
+  window.document = document;
+  
+  window.document.generateEventClick = generateEventClick;
 
   function generateEventClick(link) {
     console.log('ATBHrefClick', link)
-    document.atbHelper.dispatchEvent(new Event('ATBHrefClick', { link }))
+    document.dispatchEvent(new Event('ATBHrefClick', { link }))
   }
 })()
 

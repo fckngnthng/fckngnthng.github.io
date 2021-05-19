@@ -1,4 +1,4 @@
-console.log('index.js init ver16');
+console.log('index.js init ver17');
 
 function atbClick(link) {
   console.log(link);

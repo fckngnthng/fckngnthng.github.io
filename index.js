@@ -1,7 +1,7 @@
 
 (function () {
 
-  console.log('index.js init');
+  console.log('index.js init 2');
 
   document.atbHelper = {
     helper: function() {
@@ -13,5 +13,5 @@
 
 function generateEventClick(link) {
   console.log('ATBHrefClick', link)
-  document.dispatchEvent(new Event('ATBHrefClick', { link }))
+  document.atbHelper.dispatchEvent(new Event('ATBHrefClick', { link }))
 }

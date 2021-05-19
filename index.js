@@ -1,8 +1,7 @@
-console.log('index.js init ver15');
+console.log('index.js init ver16');
 
 function atbClick(link) {
   console.log(link);
-  const event = new CustomEvent({ link })
   window.parent.postMessage(link, '*');
 
 }

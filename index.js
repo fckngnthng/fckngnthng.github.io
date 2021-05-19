@@ -1,7 +1,7 @@
 
 (function () {
 
-  console.log('index.js init 11');
+  console.log('index.js init 12');
 
   document.addEventListener('iframeLoad', ev => {
     var iframe = document.getElementById('test-external-iframe');

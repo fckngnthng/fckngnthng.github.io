@@ -1,20 +1,28 @@
 
 (function () {
 
-  console.log('index.js init 12');
+  console.log('index.js init 13');
 
-  document.addEventListener('iframeLoad', ev => {
-    var iframe = document.getElementById('test-external-iframe');
-    console.log(iframe)
-    const externalLinks = (iframe.contentDocument || iframe.contentWindow.document).body.querySelectorAll('a')
-    console.log(externalLinks);
-    externalLinks.forEach(element => {
-        element.addEventListener('click', function (e) {
-            e.preventDefault()
-            console.log(this.href)
-        })
-    })
+  // document.addEventListener('iframeLoad', ev => {
+  //   var iframe = document.getElementById('test-external-iframe');
+  //   console.log(iframe)
+  //   const externalLinks = (iframe.contentDocument || iframe.contentWindow.document).body.querySelectorAll('a')
+  //   console.log(externalLinks);
+  //   externalLinks.forEach(element => {
+  //       element.addEventListener('click', function (e) {
+  //           e.preventDefault()
+  //           console.log(this.href)
+  //       })
+  //   })
+  // })
+
+  var frame = document.getElementById('new-atb-product-iframe');
+  var frameWindow = frame.contentWindow ? frame.contentWindow : frame.contentDocument.defaultView;
+
+  frameWindow.addEventListener('ATBHrefClick', event => {
+    console.log(event);
   })
+
 
 })()
 

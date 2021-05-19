@@ -1,7 +1,7 @@
 
 // (function () {
 
-//   console.log('index.js init 13');
+  console.log('index.js init 15');
 
 //   // document.addEventListener('iframeLoad', ev => {
 //   //   var iframe = document.getElementById('test-external-iframe');
@@ -16,19 +16,19 @@
 //   //   })
 //   // })
 
-//   var frame = document.getElementById('new-atb-product-iframe');
-//   var frameWindow = frame.contentWindow ? frame.contentWindow : frame.contentDocument.defaultView;
+//   // var frame = document.getElementById('new-atb-product-iframe');
+//   // var frameWindow = frame.contentWindow ? frame.contentWindow : frame.contentDocument.defaultView;
 
-//   frameWindow.addEventListener('ATBHrefClick', event => {
-//     console.log(event);
-//   })
+//   // const event = new CustomEvent({ link })
+//   // frameWindow.postMessage(JSON.stringify(event), '*');
 
 // })()
 
-console.log('index.js init 14');
+function atbClick(link) {
+  // var frame = document.getElementById('new-atb-product-iframe');
+  // var frameWindow = frame.contentWindow ? frame.contentWindow : frame.contentDocument.defaultView;
 
-function customClick(link) {
-  console.log(link);
   const event = new CustomEvent({ link })
-  window.postMessage(JSON.stringify(event), '*');
+  window.parent.postMessage(JSON.stringify(event), '*');
+
 }

@@ -7,7 +7,7 @@
     var iframe = document.getElementById('test-external-iframe');
     console.log(iframe)
     const externalLinks = (iframe.contentDocument || iframe.contentWindow.document).body.querySelectorAll('a')
-    console.log('externalLinks')
+    console.log(externalLinks);
     externalLinks.forEach(element => {
         element.addEventListener('click', function (e) {
             e.preventDefault()

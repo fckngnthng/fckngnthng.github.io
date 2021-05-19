@@ -1,7 +1,7 @@
 
 (function () {
 
-  console.log('index.js init 7');
+  console.log('index.js init 8');
 
   document.helper = document.createElement('div');
 

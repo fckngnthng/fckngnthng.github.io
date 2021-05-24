@@ -1,5 +1,5 @@
 .header {
-  height: 30px;
+  height: 50px;
   background-color: #FE5000;
   display: flex;
   align-items: center;
@@ -9,6 +9,7 @@
   font-size: 20px;
   color: white;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 body {

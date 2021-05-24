@@ -4,3 +4,5 @@ function atbBack() {
     window.postMessage(JSON.stringify({ type: 'ATBClosePage' }), '*');
   } else window.history.back();
 }
+
+console.log(version 1);

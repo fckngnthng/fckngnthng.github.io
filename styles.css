@@ -1,6 +1,6 @@
 .header {
   height: 30px;
-  background: linear-gradient(87.79deg, #FE5000 -50.81%, #FCA92A 156.55%);
+  background-color: #FE5000;
   display: flex;
   align-items: center;
 }
